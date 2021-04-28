@@ -1,0 +1,318 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img/sea-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    font-family: 'Baloo 2', cursive;
+    color: #114a63;
+    margin-right: 25px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-2px);
+}
+
+a::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.175rem;
+    background: #114a63;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scale(1, 1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #114a63;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #114a63;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0089b6;
+}
+
+.light-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+}
+
+.light {
+    background-color: blanchedalmond;
+    background: linear-gradient(to bottom, white ,transparent);
+    position: absolute;
+    opacity: 0.3;
+    width: 80px;
+    height: 500px;
+    clip-path: polygon(20% 0%, 35% 0, 39% 100%, 14% 100%);
+    z-index: 0;
+}
+
+
+.g {
+    width: 450px;
+    height: 550px;
+    margin-left: 200px;
+    transform: rotate(10deg);
+    opacity: 0.6;
+    animation: big-light 2s ease-in infinite;
+}
+
+.a {
+    transform: rotate(15deg);
+    margin-left: 15px;
+    animation: light-beams 2.5s ease-in infinite;
+}
+.a-2 {
+    transform: rotate(10deg);
+    margin-left: 15px;
+    animation: light-beams 3.5s ease-in infinite;
+}
+.b {
+    transform: rotate(15deg);
+    margin-left: 60px;
+    animation: light-beams 2.2s ease-in infinite;
+}
+.b-2 {
+    transform: rotate(10deg);
+    margin-left: 60px;
+    animation: light-beams 3.2s ease-in infinite;
+}
+.c {
+    transform: rotate(10deg);
+    margin-left: 100px;
+    animation: light-beams 2.8s ease-in infinite;
+}
+.c-2 {
+    transform: rotate(5deg);
+    margin-left: 100px;
+    animation: light-beams 3.8s ease-in infinite;
+}
+
+.t {
+    height: 200px;
+}
+
+.m {
+    align-items: flex-start !important;
+}
+
+.align {
+    align-items: flex-end !important;
+}
+
+.bwf {
+    font-family: 'Baloo 2', cursive;
+    font-size: 100px;
+    color: #114a63;
+    z-index: -10;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 50px;
+}
+
+.btn-cake {
+    border-radius: 20px;
+    border: 3px solid #a13c1e;
+    box-shadow: 0 5px #a13c1e;
+    border-style: solid;
+    background-color: #ffc224;
+    padding: 15px;
+    transition-duration: 200ms;
+    display: flex;
+    align-items: center;
+}
+.btn-tg {
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 3px solid #015b9b;
+    box-shadow: 0 5px #015b9b;
+    border-style: solid;
+    background-color: #46e9ff;
+    padding: 15px;
+    transition-duration: 200ms;
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-cake:focus {
+    list-style: none;
+    outline: none;
+}
+
+.btn-tg:focus {
+    list-style: none;
+    outline: none;
+}
+
+.btn-cake:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0px #a13c1e;
+    cursor: pointer;
+}
+
+.btn-tg:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0px #156cab;
+    cursor: pointer;
+}
+
+.font-btn-cake{
+    font-family: Staatliches;
+    color: #a13c1e;
+    font-size: 20px;
+}
+
+.font-btn-tg{
+    font-family: 'Staatliches';
+    color: #156cab;
+    font-size: 20px;
+}
+
+.img-cake {
+    margin-right: 5px;
+}
+
+.img-blow {
+    position: absolute;
+    top: 80px;
+    animation: moving-fish 2s ease-in-out infinite;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    z-index: -1;
+    filter: brightness(75%);
+}
+
+.img-bulle-lg-1 {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    animation: moving-bulle 6s ease-in-out infinite;
+    opacity: 0;
+    z-index: -5;
+}
+
+.img-bulle-m-1 {
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    animation: moving-bulle 5s ease-in-out infinite;
+    opacity: 0;
+    z-index: -5;
+}
+
+.img-bulle-sm-1 {
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    animation: moving-bulle 4.5s ease-in-out infinite;
+    opacity: 0;
+    z-index: -5;
+}
+.img-bulle-lg-2 {
+    position: absolute;
+    right: 200px;
+    bottom: -90px;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    animation: moving-bulle 7s ease-in-out infinite;
+    opacity: 0;
+    z-index: -5;
+}
+
+.img-bulle-m-2 {
+    position: absolute;
+    right: 60px;
+    bottom: 100px;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    animation: moving-bulle 6s ease-in-out infinite;
+    opacity: 0;
+    z-index: -5;
+}
+
+.img-bulle-sm-2 {
+    position: absolute;
+    right: 500px;
+    bottom: 300px;
+    box-shadow: 0 1px rgba(90,90,90,0);
+    animation: moving-bulle 4s ease-in-out infinite;
+    opacity: 0;
+    z-index: -5;
+}
+
+
+
+/* KY ==================================>*/
+@keyframes moving-fish {
+    50%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moving-bulle {
+    100%{
+        transform: translateY(-600px);
+    }
+    90%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes light-beams {
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes big-light {
+    50% {
+        opacity: 0.4;
+    }
+}
