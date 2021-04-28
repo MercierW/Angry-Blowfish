@@ -201,13 +201,13 @@ nav {
 }
 
 .font-btn-cake{
-    font-family: Staatliches;
+    font-family: 'Staatliches', cursive;
     color: #a13c1e;
     font-size: 20px;
 }
 
 .font-btn-tg{
-    font-family: 'Staatliches';
+    font-family: 'Staatliches', cursive;
     color: #156cab;
     font-size: 20px;
 }
